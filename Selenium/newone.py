@@ -20,7 +20,7 @@ class TestFlaskApp(unittest.TestCase):
         self.driver.quit()
 
     def take_screenshot(self, filename):
-        screenshot_dir = r"usr/local/bin"  # Use a raw string
+        screenshot_dir = r"/var/lib/jenkins/workspace/java/"  # Use a raw string
         if not os.path.exists(screenshot_dir):
             os.makedirs(screenshot_dir)
         self.driver.save_screenshot(os.path.join(screenshot_dir, filename))
