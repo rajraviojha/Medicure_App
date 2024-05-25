@@ -30,7 +30,7 @@ public class MedicureService {
     }
     
     // Method to create a dummy doctor without saving to repository
-    public Doctor registerDummyDoctor() {
+    public Doctor rdoctorNameDoctor() {
         Doctor doctor = new Doctor("MP1110","Shubham","Neurologist","15 Years");
         return doctor;
     }
